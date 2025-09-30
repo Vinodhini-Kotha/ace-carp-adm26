@@ -10,7 +10,10 @@
 
 # production
 /build
+
+# Now includes .env to prevent accidental commitment after it was removed from tracking.
 .env
+
 # misc
 .DS_Store
 .env.local

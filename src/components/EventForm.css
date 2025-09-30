@@ -11,6 +11,7 @@
 }
 
 .events-heading {
+
   font-family: 'FTY DELIRIUM NCV', serif;
   font-weight: 400;
   font-style: normal;
@@ -62,9 +63,9 @@ body {
   top: 158px;
   left: -63.5px;
   opacity: 1;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #F7F1DC;
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  /* border-color: #F7F1DC; */
   z-index: 3;
 }
 
@@ -86,7 +87,8 @@ body {
 .event-form input[type="date"],
 .event-form input[type="time"],
 .event-form input[type="file"],
-.event-form textarea {
+.event-form textarea,
+.event-form select {
   background: var(--input-bg);
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -107,7 +109,8 @@ body {
 .event-form input[type="text"]:focus,
 .event-form input[type="date"]:focus,
 .event-form input[type="time"]:focus,
-.event-form textarea:focus {
+.event-form textarea:focus,
+.event-form select:focus {
   border: 1.5px solid #8EB7BD;
 }
 
