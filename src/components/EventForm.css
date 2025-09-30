@@ -1,0 +1,135 @@
+
+
+.mask-group {
+  position: absolute;
+  width: 142.34px;
+  height: 68px;
+  top: 16px;
+  left: 58.02px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.events-heading {
+  font-family: 'FTY DELIRIUM NCV', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 223px;
+  z-index: 5;
+  color: #F7F1DC;
+}
+
+:root {
+  --input-bg: #F7F1DC;
+  --main-bg: #8EB7BD;
+}
+
+body {
+  background: var(--main-bg);
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.event-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--main-bg);
+  padding-top: 90px;
+}
+
+.vector270 {
+  position: absolute;
+  width: 1623.5px;
+  height: 228.4px;
+  top: 159px;
+  left: -87px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.vector271 {
+  position: absolute;
+  width: 1557.94px;
+  height: 83px;
+  top: 158px;
+  left: -63.5px;
+  opacity: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F7F1DC;
+  z-index: 3;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(255,255,255,0.05);
+  padding: 40px 32px 32px 32px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin-top: 300px;
+  min-width: 350px;
+  max-width: 420px;
+  z-index: 10;
+}
+
+.event-form input[type="text"],
+.event-form input[type="date"],
+.event-form input[type="time"],
+.event-form input[type="file"],
+.event-form textarea {
+  background: var(--input-bg);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.event-form textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 40px;
+  max-height: 300px;
+}
+
+.event-form input[type="text"]:focus,
+.event-form input[type="date"]:focus,
+.event-form input[type="time"]:focus,
+.event-form textarea:focus {
+  border: 1.5px solid #8EB7BD;
+}
+
+.event-form button {
+  background: #10124C;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.event-form button:hover {
+  background: #6fa0a7;
+}
+
+.event-form p {
+  color: #333;
+  margin: 0;
+  font-size: 0.98rem;
+  text-align: center;
+}
