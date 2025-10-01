@@ -1,40 +1,57 @@
-
-
-.mask-group {
-  position: absolute;
-  width: 142.34px;
-  height: 68px;
-  top: 16px;
-  left: 58.02px;
-  opacity: 1;
-  z-index: 2;
-}
-
-.events-heading {
-
-  font-family: 'FTY DELIRIUM NCV', serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 128px;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 223px;
-  z-index: 5;
-  color: #F7F1DC;
-}
-
 :root {
   --input-bg: #F7F1DC;
   --main-bg: #8EB7BD;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: var(--main-bg);
-  margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden; 
+}
+
+.mask-group {
+  position: absolute;
+  width: 8vw;
+  height: auto;
+  top: 2vh;
+  left: 5vw;
+  z-index: 2;
+  opacity: 1;
+}
+
+.events-heading {
+  font-family: 'FTY DELIRIUM NCV', serif;
+  font-weight: 400;
+  font-size: 8vw;
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 15vh;
+  z-index: 5;
+  color: #F7F1DC;
+}
+
+.vector270,
+.vector271 {
+  position: absolute;
+  width: 100vw; 
+  height: auto;
+  top: 10vh;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.vector271 {
+  z-index: 3;
 }
 
 .event-form-container {
@@ -43,43 +60,20 @@ body {
   align-items: center;
   min-height: 100vh;
   background: var(--main-bg);
-  padding-top: 90px;
-}
-
-.vector270 {
-  position: absolute;
-  width: 1623.5px;
-  height: 228.4px;
-  top: 159px;
-  left: -87px;
-  opacity: 1;
-  z-index: 1;
-}
-
-.vector271 {
-  position: absolute;
-  width: 1557.94px;
-  height: 83px;
-  top: 158px;
-  left: -63.5px;
-  opacity: 1;
-  /* border-width: 1px; */
-  /* border-style: solid; */
-  /* border-color: #F7F1DC; */
-  z-index: 3;
+  padding-top: 42vh; 
 }
 
 .event-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  background: rgba(255,255,255,0.05);
-  padding: 40px 32px 32px 32px;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  margin-top: 300px;
-  min-width: 350px;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1.125rem;
+  box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.08);
+  width: 90%;
   max-width: 420px;
+  height: fit-content;
   z-index: 10;
 }
 
@@ -91,8 +85,8 @@ body {
 .event-form select {
   background: var(--input-bg);
   border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px 14px;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
   font-size: 1rem;
   color: #333;
   outline: none;
@@ -102,24 +96,22 @@ body {
 .event-form textarea {
   resize: none;
   overflow: hidden;
-  min-height: 40px;
-  max-height: 300px;
+  min-height: 3rem;
+  max-height: 20rem;
 }
 
-.event-form input[type="text"]:focus,
-.event-form input[type="date"]:focus,
-.event-form input[type="time"]:focus,
+.event-form input:focus,
 .event-form textarea:focus,
 .event-form select:focus {
-  border: 1.5px solid #8EB7BD;
+  border: 2px solid #8EB7BD;
 }
 
 .event-form button {
   background: #10124C;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 12px 0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
@@ -132,7 +124,6 @@ body {
 
 .event-form p {
   color: #333;
-  margin: 0;
-  font-size: 0.98rem;
   text-align: center;
+  font-size: 0.98rem;
 }
